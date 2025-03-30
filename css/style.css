@@ -1,0 +1,158 @@
+/* Estilos generales */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #43C6AC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #191654, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+/* Encabezado */
+header {
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+header h1 {
+    color: #ffffff;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+header p {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+header img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transiciones suaves */
+}
+
+header img:hover {
+    transform: scale(1.05); /* Escala ligeramente la imagen al hacer hover */
+}
+/* Sección principal */
+section {
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin: 20px auto;
+    max-width: 800px; /* Ancho máximo para evitar que se vea demasiado ancho */
+}
+
+section p {
+    color: #333;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #f00; /* Rojo */
+    color: #fff;
+    padding: 10px 15px; /* Ajusta el relleno */
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados */
+    display: inline-flex;
+    align-items: center; /* Alinea verticalmente al centro */
+}
+
+/*productos*/
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto {
+    text-align: center;
+    border-radius: 8px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Agregado margen inferior para separar las tarjetas */
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Transición suave */
+    border-radius: 8px; /* Bordes redondeados solo en la parte superior */
+}
+
+.producto:hover img {
+    transform: scale(1.1); /* Escala la imagen al pasar el mouse */
+}
+
+/* Pie de página */
+footer {
+    background-color: #eee;
+    padding: 20px 0;
+    color: #777;
+    margin-top: 20px;
+}
+/* Estilos específicos para la imagen */
+.electrohogar-logo {
+    display: block;
+    margin: 20px auto;
+}
+
+.electrohogar-logo .text-electrohogar {
+    font-size: 3em;
+    font-weight: bold;
+    color: #000;
+}
+
+.electrohogar-logo .text-hogar {
+    background: linear-gradient(to right, #0f0, #0c0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.electrohogar-logo .text-todo-hogar {
+    font-size: 1.5em;
+    color: #555;
+    margin-top: 10px;
+}
+
+.electrohogar-logo .red-line {
+    width: 150px;
+    height: 5px;
+    background-color: #f00;
+    margin: 5px auto;
+}
+
+/*Videos*/
+.videos {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.videos h1 {
+    margin-bottom: 20px;
+}
+
+.videos .video {
+    display: inline-block; /* Cambiado a inline-block */
+    margin: 10px;
+    width: 48%; /* Ajusta el ancho para dejar espacio entre los videos */
+    box-sizing: border-box; /* Incluye el borde y el relleno en el ancho */
+    vertical-align: top; /* Alinea los videos en la parte superior */
+}
+
+.videos video { /* Cambiado a video para seleccionar la etiqueta <video> */
+    width: 100%;
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .videos .video {
+        width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    }
+}
