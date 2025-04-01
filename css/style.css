@@ -108,7 +108,7 @@ footer {
 
 .electrohogar-logo .text-hogar {
     background: linear-gradient(to right, #0f0, #0c0);
-    -webkit-background-clip: text;
+    /*-webkit-background-clip: text;*/
     -webkit-text-fill-color: transparent;
     font-size: 3em;
     font-weight: bold;
