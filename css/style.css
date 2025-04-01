@@ -156,3 +156,24 @@ footer {
         width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
     }
 }
+
+.scroll-to-top {
+    position: fixed; /* Fija la flecha en la pantalla */
+    bottom: 20px; /* Distancia desde la parte inferior */
+    right: 20px; /* Distancia desde la derecha */
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del icono */
+    width: 40px; /* Ancho del botón */
+    height: 40px; /* Alto del botón */
+    border-radius: 50%; /* Hace que el botón sea circular */
+    display: flex; /* Centra el icono */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s ease; /* Transición suave */
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+  }
+  
+  .scroll-to-top.show {
+    opacity: 1; /* Muestra la flecha cuando se desplaza hacia abajo */
+  }
