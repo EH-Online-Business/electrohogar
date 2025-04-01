@@ -2,18 +2,18 @@ const productosContainer = document.getElementById('productosContainer');
 
 const productosPorCategoria = {
   telefonos: [
-    'telefono1.png',
+    /*'telefono1.png',*/
     'telefono2.png',
-    'telefono3.png',
+    /*'telefono3.png',*/
     'telefono4.png',
     'telefono5.png',
-    'telefono6.png',
+    /*'telefono6.png',*/
     'telefono7.png',
     'telefono8.png',
     'telefono9.png',
     'telefono10.png',
-    'telefono11.png',
-    'telefono12.png'
+    /*'telefono11.png',
+    'telefono12.png'*/
   ],
   linea_blanca: [
     'lb1.png',
